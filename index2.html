@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>Argument in Js</h1>
+            <p id="Result"></p>
+            <script>
+                function findMax(){
+                    var max=0;
+                    for(i=0; i<arguments.length; i++){
+                        if(arguments[i]>max){
+                            max=arguments[i];
+                        }
+                    }
+                    return max;
+                }
+                document.getElementById("Result").innerHTML=findMax(4,8,9,2)
+            </script>
+        </body>
+    </head>
+</html>
